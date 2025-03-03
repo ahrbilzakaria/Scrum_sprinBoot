@@ -46,8 +46,6 @@ public class UserStory {
     @JoinColumn(name = "product_backlog_id") // Changed to singular form
     private ProductBacklog productBacklog;
 
-    // No-argument constructor is provided by Lombok's @Data
-    // Custom constructors can be added if needed
     public UserStory(String title) {
         this.title = title;
     }
