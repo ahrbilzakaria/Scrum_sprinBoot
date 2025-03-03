@@ -48,7 +48,7 @@ class ProductBacklogServiceTest {
         assertNotNull(result);
         assertEquals(productBacklog1, result);
         assertEquals(1, result.getId());
-        verify(productBacklogRepository, times(1)).getReferenceById(01L);
+        verify(productBacklogRepository, times(1)).getReferenceById(1L);
     }
 
     @Test
