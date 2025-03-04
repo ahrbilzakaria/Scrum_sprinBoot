@@ -75,4 +75,16 @@ public class EpicServiceImpl implements EpicService {
                 epic.getDescription(), epic.getProductBacklog().getId(),
                 null)).collect(Collectors.toList());
     }
+
+    @Override
+    public void setProductBacklog(Long epicId, Long productBacklogId) {
+        Epic epic = epicRepository.findById(epicId)
+                .orElseThrow(() -> new RuntimeException("Epic not found"));
+
+        ProductBacklog productBacklog = productBacklogRepository.findById(productBacklogId)
+                .orElseThrow(() -> new RuntimeException("ProductBacklog not found"));
+
+        epic.setProductBacklog(productBacklog);
+        epicRepository.save(epic);
+    }
 }
