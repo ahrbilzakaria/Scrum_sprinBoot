@@ -12,5 +12,7 @@ import java.util.List;
         public EpicDTO getEpicById(Long id);
 
         public List<EpicDTO> getAllEpics();
+
+        void setProductBacklog(Long epicId, Long productBacklogId);
     }
 

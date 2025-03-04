@@ -74,7 +74,7 @@ package com.example.demo_sprinboot.userStory;
             return userStoryRepository.save(userStory);
         }
 
-        public UserStory updatePriority(Long id, int priority) {
+        public UserStory updatePriority(Long id, String priority) {
             UserStory userStory = getUserStoryById(id);
             userStory.setPriority(priority);
             return userStoryRepository.save(userStory);

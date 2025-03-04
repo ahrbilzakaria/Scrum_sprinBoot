@@ -57,7 +57,7 @@ package com.example.demo_sprinboot.userStory;
         }
 
         @PatchMapping("/{id}/priority")
-        public ResponseEntity<UserStory> updatePriority(@PathVariable Long id, @RequestParam int priority) {
+        public ResponseEntity<UserStory> updatePriority(@PathVariable Long id, @RequestParam String priority) {
             UserStory userStory = userStoryService.updatePriority(id, priority);
             return ResponseEntity.ok().body(userStory);
         }

@@ -26,7 +26,7 @@ public class UserStory {
     private String asA;
     private String iWant;
     private String soThat;
-    private int priority;
+    private String priority;
 
     @Enumerated(EnumType.STRING)
     private Status status;

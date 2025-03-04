@@ -5,5 +5,5 @@ public class UserStoryDTO {
     private Long id;
     private String name;
     private String description;
-    private Integer priority;
+    private String priority;
 }
