@@ -24,7 +24,7 @@ public class Epic {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title;
+    private String name;
     private String description;
 
     @ManyToOne

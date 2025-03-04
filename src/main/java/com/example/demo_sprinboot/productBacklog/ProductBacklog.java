@@ -1,5 +1,6 @@
 package com.example.demo_sprinboot.productBacklog;
 
+import com.example.demo_sprinboot.status.Status;
 import com.example.demo_sprinboot.userStory.UserStory;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -26,7 +27,8 @@ public class ProductBacklog {
 
     private String priority ;              // HIGHT, MEDIUM, LOW
 
-    private String status ;                 // TO DO , IN PROGRESS , DONE
+    @Enumerated (EnumType.STRING)
+    private Status status ;                 // TO DO , IN PROGRESS , DONE
 
     private LocalDateTime createdAt ;       // date of creation
 
