@@ -1,0 +1,3 @@
+assignee	                     String	    Nom de la personne assignée à cette tâche.
+estimation	                     Integer	Estimation en points de complexité.
+sprintNumber	                 Integer    Numéro du sprint dans lequel cette tâche est planifiée.
